@@ -1,0 +1,191 @@
+/* Colores temáticos de Misiones */
+:root {
+  --verde-selva: #006400;
+  --rojo-tierra: #8B4513;
+  --azul-rio: #4682B4;
+  --fondo-piedra: #f4f4f4;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: var(--fondo-piedra);
+}
+
+/* Cabecera */
+.header-misiones {
+  background-color: var(--verde-selva);
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+.header-misiones h1 {
+  font-size: 40 px;
+  font-weight: bold;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav ul li a:hover {
+  color: var(--azul-rio);
+}
+
+/* Secciones */
+.seccion {
+  padding: 50px;
+  text-align: center;
+}
+
+.bienvenida {
+  background-color: var(--rojo-tierra);
+  color: #fff;
+}
+
+.bienvenida img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+ 
+}
+
+/* Menú */
+#menu ul {
+  list-style: none;
+  padding: 0;
+}
+
+#menu li {
+  margin: 5px 0;
+  font-size: 18px;
+}
+
+/* Galería */
+.galeria-imagenes {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.galeria-imagenes img {
+  width: 400px;
+  height: 350px;
+  object-fit: cover;
+  transition: transform 0.3s;
+  border-radius: 15px;
+  
+}
+
+.galeria-imagenes img:hover {
+  transform: scale(1.1);
+  
+}
+
+/* Formulario de Contacto */
+#contacto form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 400px;
+  margin: auto;
+  
+}
+
+#contacto input, #contacto textarea, #contacto button {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid var(--verde-selva);
+}
+
+#contacto button {
+  background-color: var(--verde-selva);
+  color: #fff;
+  cursor: pointer;
+}
+
+#contacto button:hover {
+  background-color: var(--azul-rio);
+}
+
+/* Pie de página */
+footer {
+  background-color: rgb(49, 125, 49);
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+.redes-sociales a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+.redes-sociales a:hover {
+  color: var(--azul-rio);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  nav ul {
+      flex-direction: column;
+  }
+
+  .galeria-imagenes img {
+      width: 100%;
+  }
+}
+/* Mapa responsivo */
+.seccion iframe {
+  width: 100%;
+  height: 300px;
+  border: none;
+}
+.redes-sociales a {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 24px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.redes-sociales a:hover {
+  color: #25D366; /* Verde de WhatsApp */
+}
+/* Sección del QR */
+#qr-menu {
+  text-align: center;
+  padding: 40px;
+  background-color: #f4f4f4; /* Fondo suave */
+}
+
+.qr-container {
+  display: inline-block;
+  padding: 20px;
+  border: 2px solid #333;
+  border-radius: 10px;
+  background-color: #fff;
+}
+
+.qr-container img {
+  width: 600px; /* Ajusta el tamaño según sea necesario */
+  height: auto;
+  margin-bottom: 15px;
+}
+
+.qr-container p {
+  font-size: 16px;
+  color: #555;
+  margin: 0;
+}
